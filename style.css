@@ -1,0 +1,220 @@
+:root {
+  --btn-1: rgb(0, 90, 255); /* used in 3 btns */
+  --btn-2: rgba(0, 150, 200,.2)
+}
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* make this mobile-first so it will be easy to make responsive for larger screens
+Remember to go download the pictures for mobile
+So for now today thursday Nov 6, for the desktop part esp where the images different copy the html for that to anoda test file for now!important
+then edit the html to mobile first,
+then when U wanna use @media later, go copy am back so e go easy.
+*/
+/* Nav fixed section */
+
+nav {
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 5em;
+  border-bottom: 0px solid rgba(0,0,0,.7);
+}
+
+.nflex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+nav i{
+  font-size: 30px;
+}
+
+nav i:nth-child(1){
+   margin-right: auto;
+   margin-left: 5px;
+}
+
+nav a:nth-of-type(1){
+  margin-right: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  height: fit-content;
+  padding: 5px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: none;
+}
+
+nav a:nth-of-type(1):hover,
+nav a:nth-of-type(1):focus{
+  background-color: rgb(200, 200, 200);
+}
+
+nav a:nth-of-type(2){
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--btn-1); /* set var */
+  display: block;
+  height: fit-content;
+  padding: 10px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* responsive nav */
+@media (min-width:768px) {
+    nav a:nth-of-type(1){
+      display: block;
+    }
+    nav i:nth-child(1){
+   margin-left: 2em;
+}
+  
+}
+
+/* header */
+
+.him{
+  border-top: 1px solid rgba(0,0,0,.4);
+  position: relative;
+  top: 70px;
+}
+header{
+  position: relative;
+  top: 70px;
+}
+
+figure {
+  width: calc(60vw + 100px);
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 2em;
+  /* border-bottom on bigger screen */
+}
+
+figure h1{
+  font-size: calc(4vw + 1em);
+  text-align: center;
+  text-wrap: wrap;
+}
+
+figure p{
+  text-align: center;
+  font-size: calc(2vw + 10px);
+  line-height: 1.5;
+  margin-bottom: calc(1vh + 5px);
+  /* add margin left to bigger screen media rule so e go align with the h1 */
+}
+
+.hlink {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.hlink a{
+  display: block;
+  background-color: var(--btn-1);
+  width: calc(2vw + 300px);
+  text-align: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  /* change size on bigger screen */
+}
+
+.hlink a:nth-of-type(2) {
+  background-color: var(--btn-2);
+  color: var(--btn-1);
+}
+
+video{
+  display: none;
+  /* display for larger screen */
+}
+
+.logoh{
+  text-align: center;
+  color: rgba(0,0,0,.6);
+  margin-top: 10px;
+  order: -1; 
+  width: 100%; /* this order and width makes it appear above the rem flex in small screens */
+}
+
+.hflex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  align-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+}
+
+.hflex img{
+  width: calc(5vw + 70px);
+  height: auto;
+}
+
+/*.responsive header */
+@media (min-width:960px) {
+   
+  header video {
+    display: block;
+    margin: 1em auto;
+    width: 70%;
+  }
+  
+  figure {
+    margin-bottom: 2em;
+    width: 90%;
+  }
+  
+  .him{
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .hlink a {
+    width: fit-content;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .hflex{
+    margin-top: 2em;
+    width: 80%;
+    justify-content: space-around;
+  }
+  .logoh {
+    order: 0;
+    width: auto;
+  }
+  
+  
+}
+
+
+
+/* main */
+main{
+  position: relative;
+  top: 100px;
+}
