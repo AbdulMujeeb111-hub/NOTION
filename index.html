@@ -42,7 +42,7 @@
      <!-- style the 2 links as button -->
       
      
-     <video src="Headervid.mp4" controls="" loop="" autoplay="" width="80%" poster="poster.jpg" height="15%"></video>
+     <video src="Headervid.mp4" loop="" autoplay="" width="80%" poster="poster.jpg" height="15%" muted></video>
      <!-- position properly with CSS -->
      
 
@@ -60,65 +60,64 @@
    
    <main> <!-- na here work dey oooo, background is grey, everything else is nested here for ease except the footer -->
    <h4>Introducing Notion 3.0</h4>
-   
-   <section> <!-- grid this, and also use positioning to achieve exact centering effect -->
+
+   <section class="mgrid"> <!-- grid this, and also use positioning to achieve exact centering effect -->
    
    
      <div class="grid-item1">
        <a href="https://www.notion.com/product/ai/use-cases" target="_blank">Notion Agent
-New<!-- make this small and wrap it -->
-You assign the tasks. Your Notion Agent does the work. <!-- bold this -->
-→<<!-- dark circle background --> </a>
-       <p>Hand off your busywork(bold dis)
-      What used to take days in minutes. Tell it your goal and watch it work.</p>
+<span class="sm">New</span><!-- make this small and wrap it -->
+<h3>You assign the tasks. Your </h3>
+<h3>Notion Agent does the work. <i class="fa-duotone fa-solid fa-circle-arrow-right"></i></h3></h3>
+    </a>
+        <figure >
+           <img src="AIp.jpg" alt=" Notion AI preview" width="50%">
+       <!-- font-awesome for this icon or similiar -->
+       </figure>
+       <p> <span class="bd">Personalized to you</span> Your Agent learns how you work. You control everything from how it behaves to how it looks. </p>
+       
       <!-- fontawesome or svg 4 circles first one dark -->
      </div>
      
-     <figure class="grid-item2">
-       <img src="AIp.jpg" alt=" Notion AI preview" width="50%">
-       <!-- font-awesome for this icon or similiar -->
-     </figure>
+     
    
-     <div class="grid-item3">
+     <div class="grid-item2">
        <a href="https://notion.notion.site/26fefdeead05803ca7a6cd2cdd7d112f?pvs=105" class="card-link" target="_blank">
          <div class="content-card">
-         <p>Custom Agents <!-- special style --> Coming soon</p>
-         <h3>Automate repetitive tasks</h3>
-         →<!-- dark circle background -->
-          <img src="Summary.jpg" alt="Image preview of AI automation" width="50%">
+         <p>Custom Agents <!-- special style --> <span class="sm">Coming soon</span></p>
+         <h3>Automate repetitive tasks <i class="fa-duotone fa-solid fa-circle-arrow-right"></i></h3>
+         <img src="sum.png" alt="Image preview of AI automation" width="50%" class="im1">
           </div>
                  <!-- font-awesome for this icon or similiar -->
         </a>
     </div>
     
-     <div class="grid-item4">
+     <div class="grid-item3">
        <a href="https://www.notion.com/product/enterprise-search" class="card-link" target="_blank">
-         <div class="content-card">
          <p>Enterprise Search</p>
-         <h3>One Search for everything.</h3>
-         <img src="Team.jpg" alt="Search preview" width="50%"> <!-- red border for this, somewhat transparent too -->
+         <h3>One Search for everything.<i class="fa-duotone fa-solid fa-circle-arrow-right"></i></h3>
+         <img src="team.png" alt="Search preview" class="im2"> <!-- red border for this, somewhat transparent too -->
+                 <!-- font-awesome for this icon or similiar -->
+        </a>
+    </div>
+    
+     <div class="grid-item4">
+       <a href="https://www.notion.com/product/ai-meeting-notes" class="card-link" target="_blank">
+         <div class="content-card">
+         <p>AI Meeting Notes</p>
+         <h3>Perfect notes, every time <i class="fa-duotone fa-solid fa-circle-arrow-right"></i></h3>
+         <img src="sale.png" alt="Image showing a Sales Meeting Note taken with Notion AI" width="50%" class="im3">
           </div>
                  <!-- font-awesome for this icon or similiar -->
         </a>
     </div>
     
      <div class="grid-item5">
-       <a href="https://www.notion.com/product/ai-meeting-notes" class="card-link" target="_blank">
-         <div class="content-card">
-         <p>AI Meeting Notes</p>
-         <h3>Perfect notes, every time</h3>
-         <img src="Sales.jpg" alt="Image showing a Sales Meeting Note taken with Notion AI" width="50%">
-          </div>
-                 <!-- font-awesome for this icon or similiar -->
-        </a>
-    </div>
-    
-     <div class="grid-item6">
        <a href="" class="card-link">
          <div class="content-card">
          <p>Flexible workflows</p>
-         <h3>Manage any project, big or small.</h3>
-         <img src="Road.png" alt="Image showing a roadmap of a project being managed on Notion" width="50%">
+         <h3>Manage any project, big or small. <i class="fa-duotone fa-solid fa-circle-arrow-right"></i></h3>
+          <img src="ROAD.png" alt="Image showing a roadmap of a project being managed on Notion" width="50%" class="im4">
           </div>
                  <!-- font-awesome for this icon or similiar -->
         </a>
@@ -133,23 +132,27 @@ You assign the tasks. Your Notion Agent does the work. <!-- bold this -->
    </p>
    Forbes (bold this)
    </div>
+   </main>
    
-   <section> <!-- Checkbox section, original site actually used loads of JS here but I neva reach that stage lol 
+   
+   <section class="Checkbox-section"> <!-- Checkbox section, original site actually used loads of JS here but I neva reach that stage lol 
    Insha'Allah when I later learn JS basics I will come back to do this whole site properly -->
      
-     <div> <!-- float img here to right and add approporiate margins -->
-      <h4>More Productivity. <br>
+     <div class="Checkbox-section-flex">
+        <div class="csf-1">
+          <h4>More Productivity. <br>
       Fewer tools.</h4>
       <p>
         Bring all your tools and teams under one roof. Calculate savings below.
       </p>
-      <a href="https://www.notion.com/pricing" target="_blank">See pricing plans</a> <!-- arrow font-awesome -->
-      <img src="Cross.png" alt="Image showing some logos crossed out by a diagonal line" width="60%">
+      <a href="https://www.notion.com/pricing" target="_blank">See pricing plans &rarr;</a> 
+        </div>
+      <img src="Cross.png" alt="Image showing some logos crossed out by a diagonal line" width="60%" class="csf-2">
      </div>
       
       
-      <div> <!-- to act as container cus e need border and also grid 2 columns -->
-        <div> <!-- for the checkboxes, bold the labels, -->
+      <div class="Pitching-grid"> <!-- to act as container cus e need border and also grid 2 columns -->
+        <div class="Pgrid-1"> <!-- for the checkboxes, bold the labels, -->
           <p>
             <input type="checkbox" id="AI Search" value="AI Search" name="AI Search">
             <label for="AI Search">AI Search</label>
@@ -202,48 +205,48 @@ You assign the tasks. Your Notion Agent does the work. <!-- bold this -->
         </div> <!-- Checkbox end here -->
         
         
-        <div> <!-- for the calc section, somewhat grey transparent background -->
+        <div class="Pgrid-2"> <!-- for the calc section, somewhat grey transparent background -->
           <p>
             <label for="Teamsize">Team size</label> <br>
-            <input type="number" id="Teamsize" name="Teamsize"> <!-- style this input properly -->
+            <input type="number" id="Teamsize" name="Teamsize" value="10"> <!-- style this input properly -->
           </p>
           
           <p>
             Monthly savings <br>
-            <span>&dollar;340</span> <!-- bold dis -->
+            <span class="b-price">&dollar;340</span> <!-- bold dis -->
           </p>
           <p>
             Annual savings <br>
-            &dollar;4080 <!-- bold dis whole section -->
+            <span class="b-price">&dollar;4080</span> <!-- bold dis whole section -->
           </p>
         </div>
         
       </div> <!-- Grid for checkboxes and calc sub-sections ends here -->
-      
 
    </section> <!-- end of CHECKBOX AND GRID SECTIONS -->
    
-   
-   
+   <main>
+     
+      
    <section>
      
    </section>
-   
-   
-   
-   
-   
+     
      
    </main>
+  
+   
+   
+   
    
    
    
    
    <footer>
-     <i class="fa-brands fa-notion"></i> 
-     <h3>Notion</h3>
      
-     <div> <!-- flex this and add a lil bit of transparency to these icon links with proper styling -->
+     <h3><i class="fa-brands fa-notion"></i> Notion</h3>
+     
+     <div class="footer-logo-links"> <!-- flex this and add a lil bit of transparency to these icon links with proper styling -->
       <a href="https://www.instagram.com/notionhq/" target="_blank">
         <i class="fa-brands fa-instagram"></i> </a> 
        <a href="https://twitter.com/NotionHQ" target="_blank">
@@ -264,9 +267,10 @@ You assign the tasks. Your Notion Agent does the work. <!-- bold this -->
      
      
      <div> <!-- for language select option, not optimized with JS yet but I just have to add it, will do that later insha'Allah -->
+     <i class="fa-solid fa-language"></i>
        <select name="Language Choice for Website Display" id="LangWeb">
          
-         <option value="English(US)">
+         <option value=" English(US)">
            <!-- appropriate icon relating to language -->English(US)</option>
            
          <option value="English(UK)">           <!-- appropriate icon relating to language -->English(UK)</option>
@@ -292,12 +296,12 @@ You assign the tasks. Your Notion Agent does the work. <!-- bold this -->
      </div> <!-- end of lang select -->
      
      
-     <div> <!-- policy subpart, this part will be really small-->
+     <div class="copy"> <!-- policy subpart, this part will be really small-->
        <p>Cookie settings</p>
        <p>&copy; 2025 Notion Labs, Inc.</p>
      </div>
      
-     <div> <!-- grid this section cus of how e dey arranged for the original website -->
+     <div class="Last-grid"> <!-- grid this section cus of how e dey arranged for the original website -->
        
        <div class="Lgrid1">
          <h4>Company</h4>
@@ -322,36 +326,35 @@ You assign the tasks. Your Notion Agent does the work. <!-- bold this -->
          
          
          <div class="Lgrid3">
-         <h4>Company</h4>
-         <p><a href="https://www.notion.com/about" target="_blank">About us</a></p>
-         <p><a href="https://www.notion.com/careers" target="_blank">Careers</a></p>
-         <p><a href="https://www.notion.com/security" target="_blank">Security</a></p>
-         <p><a href="https://www.notion-status.com/" target="_blank">Status</a></p>
-         <p><a href="https://www.notion.so/28ffdd083dc3473e9c2da6ec011b58ac" target="_blank">Terms &amp; privacy</a></p>
-         <p><a href="https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091?source=copy_link#18e15495ac2643659c303cbe96358620" target="_blank">Your privacy rights</a></p>
+         <h4>Resources</h4>
+         <p><a href="https://www.notion.com/help" target="_blank">Help center</a></p>
+         <p><a href="https://www.notion.com/pricing" target="_blank">Pricing</a></p>
+         <p><a href="https://www.notion.com/blog" target="_blank">Blog</a></p>
+         <p><a href="https://www.notion.com/community" target="_blank">Community</a></p>
+         <p><a href="https://www.notion.com/integrations" target="_blank">Integrations</a></p>
+         <p><a href="https://www.notion.com/templates" target="_blank">Templates</a></p>
+         <p><a href="https://www.notion.com/partners" target="_blank">Partner programs</a></p>
          
          </div>
          
          
          <div class="Lgrid4">
-         <h4>Company</h4>
-         <p><a href="https://www.notion.com/about" target="_blank">About us</a></p>
-         <p><a href="https://www.notion.com/careers" target="_blank">Careers</a></p>
-         <p><a href="https://www.notion.com/security" target="_blank">Security</a></p>
-         <p><a href="https://www.notion-status.com/" target="_blank">Status</a></p>
-         <p><a href="https://www.notion.so/28ffdd083dc3473e9c2da6ec011b58ac" target="_blank">Terms &amp; privacy</a></p>
-         <p><a href="https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091?source=copy_link#18e15495ac2643659c303cbe96358620" target="_blank">Your privacy rights</a></p>
+         <h4>Notion for</h4>
+         <p><a href="https://www.notion.com/enterprise" target="_blank">Enterprise</a></p>
+         <p><a href="https://www.notion.com/teams" target="_blank">Small business</a></p>
+         <p><a href="https://www.notion.com/personal" target="_blank">Personal</a></p>
+         
+           
+         <div class="stand-alone">
+           <a href="https://www.notion.com/explore">Explore more→</a>
+         </div>
          
          </div>
          
-     
-     
+         
      
        
      </div> <!-- end of last grid section -->
-     
-     
-     
      
    </footer>
    

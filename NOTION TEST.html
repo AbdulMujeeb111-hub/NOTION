@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html> <!-- make this mobile-first -->
+ <head>
+   <meta charset="utf-8">
+   <meta name="author" content="Abdulmujeeb">
+   <meta name="viewport" content="width=device-width">
+   <title>NOTION LANDING PAGE CLONE BY ABDULMUJEEB</title>
+   <link rel="stylesheet" href=>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" >
+   
+   <style>
+   :root {
+  --btn-1: rgb(0, 90, 255); /* used in 3 btns */
+  --btn-2: rgba(0, 150, 200,.2)
+}
+   
+   
+     *{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+     }
+     main{
+       margin-bottom: 100vh;
+       background-color: rgba(211,211,211,.4);
+       padding: calc(2vw + 2em);
+     }
+     
+     main h4 {
+  text-align: center;
+  font-size: calc(1vw + 25px);
+}
+
+section div{
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+section  a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+section div a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.sm {
+  background-color: var(--btn-2);
+  color: var(--btn-1);
+  border-radius: 15px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: calc(1vw + 10px);
+  margin-left: 7px;
+}
+
+  
+.i1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.i1 a{
+  margin-bottom: 1em;
+}
+.i1 img{
+  margin-bottom: 1em;
+}
+.mg-box{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+a > p:nth-child(2) {
+  font-weight: bold;
+  text-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.bdis {
+  font-weight: bold;
+  display: block;
+  color: black;
+}
+.i1 a p{
+  text-wrap: wrap;
+  width: calc(15vw + 150px);
+  margin-top: 10px;
+}
+a > p{
+  margin-left: 10px;
+}
+.grey {
+  margin-left: 10px;
+  line-height: 1.5;
+  color: rgba(150,150,150,1);
+  font-size: 15px;
+}
+
+.fig1{
+  background-color: rgba(125,125,125,.6);
+  position: relative;
+  overflow: hidden;
+}
+.fg1{
+ position: relative;
+ left: 2em;
+ top: 3em;
+ box-shadow: -5px -5px rgba(240,240,240,.7);
+ border-radius: 5px;
+}
+.fg2{
+  position: relative;
+  border-radius: 5px;
+  left: 15px;
+  top: 25px;
+  box-shadow: -5px -5px rgba(240,240,240,.7);
+}
+
+.fig2{
+  background-color: rgba(230,60,0,1);
+  position: relative;
+  overflow: hidden;
+}
+.fg3{
+  width: 70%;
+  position: relative;
+  left: calc(5vw + 30px);
+  top: calc(2vw + 5px);
+}
+
+.fig3{
+  background-color: rgba(0,200,250,1);
+  position: relative;
+  overflow: hidden;
+}
+.fg4{
+  width: 70%;
+  position: relative;
+  left: calc(5vw + 30px);
+  top: calc(2vw + 5px);
+  border-radius: 5px;
+  box-shadow: -5px -5px 2px rgba(0,0,250,.3);
+}
+
+
+.fig4{
+  background-color: rgba(125,80,1,.6);
+  position: relative;
+  overflow: hidden;
+}
+.fg5{
+ position: relative;
+ border-radius: 5px;
+ width: 40%;
+ left: 20px;
+ top: calc(5vw + 15px);
+ 
+}
+.fg6{
+  position: relative;
+  border-radius: 5px;
+  width: 40%;
+  
+  box-shadow: -5px -5px rgba(240,240,240,.7);
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .mg-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+  .i1 {
+    grid-area: 1 / 1 / 2/ 3;
+  }
+  
+  .i2{
+    grid-area: 2/ 1/ 3/ 3;
+  }
+  
+  .i5{
+    grid-area: 4/ 1/ 5/ 3;
+    height: fit-content;
+  }
+  
+  
+  
+  
+}
+     
+     
+     
+     
+     
+     
+   </style>
+  
+  
+  
+  
+  
+  
+ </head>
+ <body>
+  <!-- <i class="fa-regular fa-paper-plane"></i> -->
+  
+  
+
+   
+   <main> <!-- na here work dey oooo, background is grey, everything else is nested here for ease except the footer -->
+   <h4>Introducing Notion 3.0</h4>
+   <section class="mg-box">
+     <div class="i1">
+       <a href="https://www.notion.com/product/ai/use-cases">
+      <p>Notion Agent <span class="sm">New</span></p>   
+     <p>You assign the tasks. Your Notion Agent does the work.</p>
+       </a>
+       <img src="AIp.jpg" width="100%">
+       <p class="grey">
+         <span class="bdis">Personalized to you</span>
+Your Agent learns how you work. You control everything from how it behaves to how it looks.
+       </p>
+     </div>
+     
+     
+     
+       <a href="https://notion.notion.site/26fefdeead05803ca7a6cd2cdd7d112f?pvs=105" class="i2">
+         <p>Custom Agents <span class="sm">Coming soon</span></p>
+         <p>Automate repetitive tasks</p>
+         <figure class="fig1">
+            <img src="Summary2.jpg" width="40%" class="fg1">
+           <img src="Summary.jpg" width="40%" class="fg2">
+         </figure>
+       </a>
+     
+     
+     
+     
+       <a href="https://www.notion.com/product/enterprise-search" class="i3">
+         <p>Enterprise Search</p>
+         <p>One search for everything</p>
+         <figure class="fig2">
+           <img src="Team.jpg" width="100%" class="fg3">
+         </figure>
+       </a>
+     
+     
+     
+     
+       <a href="https://www.notion.com/product/ai-meeting-notes" class="i4">
+         <p>AI Meeting Notes</p>
+         <p>Perfect notes, every time </p>
+         <figure class="fig3">
+           <img src="SALe.jpg" width="100%" class="fg4">
+         </figure>
+       </a>
+     
+     
+     
+       <a href="https://www.notion.com/product/projects" class="i5">
+         <p>Flexible workflows</p>
+         <p>Manage any project, big or small. </p>
+        <figure class="fig4">
+           <img src="Road2.jpg" width="100%" class="fg5">
+         <img src="Road.jpg" width="100%" class="fg6">
+        </figure>
+       </a>
+     
+     
+     
+   </section>
+   
+   
+   
+   
+   
+   
+   
+   
+   <div> <!-- center this -->
+     <p> <!-- center this -->
+     &quot; Your AI everything app.&quot;
+   </p>
+   Forbes (bold this)
+   </div>
+   
+     
+   </main>
+   
+    <section> <!-- Checkbox section, original site actually used loads of JS here but I neva reach that stage lol 
+   Insha'Allah when I later learn JS basics I will come back to do this whole site properly -->
+     
+     <div> <!-- float img here to right and add approporiate margins -->
+      <h4>More Productivity. <br>
+      Fewer tools.</h4>
+      <p>
+        Bring all your tools and teams under one roof. Calculate savings below.
+      </p>
+      <a href="https://www.notion.com/pricing" target="_blank">See pricing plans</a> <!-- arrow font-awesome -->
+      <img src="Cross.png" alt="Image showing some logos crossed out by a diagonal line" width="60%">
+     </div>
+      
+      
+      <div> <!-- to act as container cus e need border and also grid 2 columns -->
+        <div> <!-- for the checkboxes, bold the labels, -->
+          <p>
+            <input type="checkbox" id="AI Search" value="AI Search" name="AI Search">
+            <label for="AI Search">AI Search</label>
+          </p>
+          <p>
+            <input type="checkbox" id="AI Chatbot" checked="" value="AI Chatbot" name="AI Chatbot">
+            <label for="AI Chatbot">AI Chatbot <sub>&dollar;20/user</sub></label>
+          </p>
+          <p>
+            <input type="checkbox" id="AI MN" name="AI Meeting Notes" value="AI Meetinh Notes">
+            <label for="AI MN">AI Meeting Notes</label>
+          </p>
+          <p>
+            <input type="checkbox" id="AI WA" name="AI Writing Assistant" value="AI Writing Assistant">
+            <label for="AI WA">AI Writing Assistant</label>
+          </p>
+          <p>
+            <input type="checkbox" id="AI EA" name="AI Email App" value="AI Email App">
+            <label for="AI EA">AI Email App</label>
+          </p>
+          <p>
+            <input type="checkbox" id="AI R" name="AI Research" value="AI Research">
+            <label for="AI R">AI Research</label>
+          </p>
+          <p>
+            <input type="checkbox" id="CS" name="Calendar Scheduling" value="Calendar Scheduling">
+            <label for="CS">Calendar Scheduling</label>
+          </p>
+          <p>
+            <input type="checkbox" id="TW" checked="" name="Team Wiki" value="Team Wiki">
+            <label for="TW">Team Wiki <sub>&dollar;10/user</sub></label>
+          </p>
+          <p>
+            <input type="checkbox" id="PMT" checked="" name="Project Management Tool" value="Project Management Tool">
+            <label for="PMT">Project Management Tool<sub>&dollar;24/user</sub></label>
+          </p>
+          <p>
+            <input type="checkbox" id="BCRM" name="Basic CRM" value="Basic CRM">
+            <label for="BCRM">Basic CRM</label>
+          </p>
+          <p>
+            <input type="checkbox" id="SB" name="Site Builder" value="Site Builder">
+            <label for="SB">Site Builder</label>
+          </p>
+          <p>
+            <input type="checkbox" id="Forms" name="Forms" value="Forms">
+            <label for="Forms">Forms</label>
+          </p>
+          
+        </div> <!-- Checkbox end here -->
+        
+        
+        <div> <!-- for the calc section, somewhat grey transparent background -->
+          <p>
+            <label for="Teamsize">Team size</label> <br>
+            <input type="number" id="Teamsize" name="Teamsize"> <!-- style this input properly -->
+          </p>
+          
+          <p>
+            Monthly savings <br>
+            <span>&dollar;340</span> <!-- bold dis -->
+          </p>
+          <p>
+            Annual savings <br>
+            &dollar;4080 <!-- bold dis whole section -->
+          </p>
+        </div>
+        
+      </div> <!-- Grid for checkboxes and calc sub-sections ends here -->
+      
+
+   </section> <!-- end of CHECKBOX AND GRID SECTIONS -->
+   
+   
+   
+   <section>
+     
+   </section>
+   
+   <!-- -->
+   
+   
+   
+   
+   
+   <footer>
+     <i class="fa-brands fa-notion"></i> 
+     <h3>Notion</h3>
+     
+     <div> <!-- flex this and add a lil bit of transparency to these icon links with proper styling -->
+      <a href="https://www.instagram.com/notionhq/" target="_blank">
+        <i class="fa-brands fa-instagram"></i> </a> 
+       <a href="https://twitter.com/NotionHQ" target="_blank">
+         <i class="fa-brands fa-x-twitter"></i> 
+         </a>
+       <a href="https://www.linkedin.com/company/notionhq/" target="_blank">
+         <i class="fa-brands fa-linkedin"></i>
+       </a>
+       <a href="https://www.facebook.com/NotionHQ/" target="_blank">
+         <i class="fa-brands fa-facebook"></i>
+       </a> 
+       <a href="https://www.youtube.com/channel/UCoSvlWS5XcwaSzIcbuJ-Ysg" target="_blank">
+         <i class="fa-brands fa-youtube"></i>
+       </a> 
+       
+     </div> <!-- End of links flex part -->
+     
+     
+     
+     <div> <!-- for language select option, not optimized with JS yet but I just have to add it, will do that later insha'Allah -->
+       <select name="Language Choice for Website Display" id="LangWeb">
+         
+         <option value="English(US)">
+           <!-- appropriate icon relating to language -->English(US)</option>
+           
+         <option value="English(UK)">           <!-- appropriate icon relating to language -->English(UK)</option>
+         
+         <option value="Yoruba"> <!-- appropriate icon relating to language -->Yoruba(NG)</option>
+         
+         <option value="Hausa"> <!-- appropriate icon relating to language -->Hausa(NG)</option>
+         
+         <option value="Igbo"> <!-- appropriate icon relating to language -->Igbo(NG)</option>
+         
+         <option value="Francais"> <!-- appropriate icon relating to language -->Francais(FR)</option>
+         
+         <option value="Mandarin"> <!-- appropriate icon relating to language -->Mandarin(CH)</option>
+         
+         <option value="Spanish"> <!-- appropriate icon relating to language -->Spanish(ESP)</option>
+         
+         <option value="German"> <!-- appropriate icon relating to language -->German(GER)</option>
+         
+         <option value="Japanese"> <!-- appropriate icon relating to language -->Japanese(JPN)</option>
+         
+       </select>
+       
+     </div> <!-- end of lang select -->
+     
+     
+     <div> <!-- policy subpart, this part will be really small-->
+       <p>Cookie settings</p>
+       <p>&copy; 2025 Notion Labs, Inc.</p>
+     </div>
+     
+     <div> <!-- grid this section cus of how e dey arranged for the original website -->
+       
+       <div class="Lgrid1">
+         <h4>Company</h4>
+         <p><a href="https://www.notion.com/about" target="_blank">About us</a></p>
+         <p><a href="https://www.notion.com/careers" target="_blank">Careers</a></p>
+         <p><a href="https://www.notion.com/security" target="_blank">Security</a></p>
+         <p><a href="https://www.notion-status.com/" target="_blank">Status</a></p>
+         <p><a href="https://www.notion.so/28ffdd083dc3473e9c2da6ec011b58ac" target="_blank">Terms &amp; privacy</a></p>
+         <p><a href="https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091?source=copy_link#18e15495ac2643659c303cbe96358620" target="_blank">Your privacy rights</a></p>
+         
+       </div>
+       
+       
+       <div class="Lgrid2">
+         <h4>Download</h4>
+         <p><a href="https://www.notion.com/mobile" target="_blank">iOS &amp; Android</a></p>
+         <p><a href="https://www.notion.com/desktop" target="_blank">Mac &amp; Windows</a></p>
+         <p><a href="https://www.notion.com/product/calendar/download" target="_blank">Calendar</a></p>
+         <p><a href="https://www.notion.com/web-clipper" target="_blank">Web Clipper</a></p>
+         
+         </div>
+         
+         
+         <div class="Lgrid3">
+         <h4>Company</h4>
+         <p><a href="https://www.notion.com/about" target="_blank">About us</a></p>
+         <p><a href="https://www.notion.com/careers" target="_blank">Careers</a></p>
+         <p><a href="https://www.notion.com/security" target="_blank">Security</a></p>
+         <p><a href="https://www.notion-status.com/" target="_blank">Status</a></p>
+         <p><a href="https://www.notion.so/28ffdd083dc3473e9c2da6ec011b58ac" target="_blank">Terms &amp; privacy</a></p>
+         <p><a href="https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091?source=copy_link#18e15495ac2643659c303cbe96358620" target="_blank">Your privacy rights</a></p>
+         
+         </div>
+         
+         
+         <div class="Lgrid4">
+         <h4>Company</h4>
+         <p><a href="https://www.notion.com/about" target="_blank">About us</a></p>
+         <p><a href="https://www.notion.com/careers" target="_blank">Careers</a></p>
+         <p><a href="https://www.notion.com/security" target="_blank">Security</a></p>
+         <p><a href="https://www.notion-status.com/" target="_blank">Status</a></p>
+         <p><a href="https://www.notion.so/28ffdd083dc3473e9c2da6ec011b58ac" target="_blank">Terms &amp; privacy</a></p>
+         <p><a href="https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091?source=copy_link#18e15495ac2643659c303cbe96358620" target="_blank">Your privacy rights</a></p>
+         
+         </div>
+         
+     
+     
+     
+       
+     </div> <!-- end of last grid section -->
+     
+     
+     
+     
+   </footer>
+   
+   
+   
+   
+ </body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>

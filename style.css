@@ -5,16 +5,15 @@
 
 
 
-*{
+*,
+*::before,
+*::after{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 /* make this mobile-first so it will be easy to make responsive for larger screens
 Remember to go download the pictures for mobile
-So for now today thursday Nov 6, for the desktop part esp where the images different copy the html for that to anoda test file for now!important
-then edit the html to mobile first,
-then when U wanna use @media later, go copy am back so e go easy.
 */
 /* Nav fixed section */
 
@@ -82,8 +81,7 @@ nav a:nth-of-type(2){
     nav i:nth-child(1){
    margin-left: 2em;
 }
-  
-}
+  } /* responsive nav end */
 
 /* header */
 
@@ -102,7 +100,6 @@ figure {
   margin: 0 auto;
   padding: 15px;
   margin-bottom: 2em;
-  /* border-bottom on bigger screen */
 }
 
 figure h1{
@@ -115,6 +112,7 @@ figure p{
   text-align: center;
   font-size: calc(2vw + 10px);
   line-height: 1.5;
+  text-wrap: wrap;
   margin-bottom: calc(1vh + 5px);
   /* add margin left to bigger screen media rule so e go align with the h1 */
 }
@@ -153,7 +151,7 @@ video{
   color: rgba(0,0,0,.6);
   margin-top: 10px;
   order: -1; 
-  width: 100%; /* this order and width makes it appear above the rem flex in small screens */
+  width: 100%; /* this order and width makes it appear above the rem flex items in small screens */
 }
 
 .hflex{
@@ -178,12 +176,18 @@ video{
   header video {
     display: block;
     margin: 1em auto;
-    width: 70%;
+    width: 90%;
+    box-shadow: 0 10px 15px rgba(0,0,0,.4);
   }
   
   figure {
     margin-bottom: 2em;
     width: 90%;
+  }
+  
+  figure p {
+    margin-left: 2em;
+    text-indent: 3em;
   }
   
   .him{
@@ -200,21 +204,280 @@ video{
   
   .hflex{
     margin-top: 2em;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
   }
   .logoh {
+    font-size: 20px;
     order: 0;
     width: auto;
   }
   
-  
-}
+} /* responsive header end */
 
 
 
-/* main */
+/* main section
+I think this is a grid, bg color grey the 1st 2nd and last items will also be made grids,
+I'll set that responsive shii to the template columns as accordingly*/
 main{
   position: relative;
   top: 100px;
+  background-color: rgba(211,211,211,.4);
+  padding: calc(2vw + 2em);
+  margin-bottom: 5em;
+}
+
+main h4 {
+  text-align: center;
+  font-size: calc(1vw + 25px);
+}
+
+section div{
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+section div a{
+  text-decoration: none;
+  color: black;
+}
+.sm {
+  background-color: var(--btn-2);
+  color: var(--btn-1);
+  border-radius: 15px;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.mgrid{
+  position: relative;
+  display: grid;
+  gap: 15px;
+  right: 10px;
+/*  grid-template-rows: 400px 400px 250px 250px 250px; */
+}
+
+.grid-item1 figure img{
+  width: 100%;
+  object-fit: cover;
+}
+.grid-item1 p {
+  margin-top: 0;
+}
+
+.im1,
+.im2,
+.im3,
+.im4{
+  width: 100%;
+  object-fit: cover;
+}
+
+.bd{
+  display: block;
+  font-weight: bold;
+}
+
+
+/* Checkbox section immediately after main grid section */
+.Checkbox-section {
+  width: 100%;
+  padding: 30px 15px;
+}
+
+.Checkbox-section-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.csf-1 h4 {
+  font-size: calc(2vw + 20px);
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.csf-1 p {
+  font-size: calc(1vw + 10px);
+  margin-bottom: 10px;
+}
+
+.csf-1 a {
+  color: rgba(0,100,240,.7);
+  font-size: calc(1vw + 12px);
+}
+
+.csf-2 {
+  width: 85%;
+  order: -1;
+}
+
+.Pitching-grid {
+  border: 1px solid rgba(125,125,125,.4);
+  border-radius: 10px;
+  padding: 15px;
+  padding-left: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 30px;
+}
+
+.Pgrid-1 {
+  line-height: 2;
+  font-weight: bold;
+}
+.Pgrid-1 * sub {
+  font-weight: normal;
+  color: rgba(125,125,125,.7);
+}
+
+.Pgrid-2 {
+  background-color: rgba(225,225,225,.2);
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.b-price {
+  font-size: 25px;
+}
+
+.Pgrid-2 input {
+  font-size: 25px;
+  font-weight: bold;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid rgba(100,100,100,.3);
+  padding: 10px;
+}
+
+/* responsive Checkbox-section */
+@media (min-width: 768px) {
+  .Checkbox-section {
+    padding-top: 3em;
+    padding-right: 0;
+    padding-left: 3em;
+    padding-bottom: 0;
+  }
+  
+  
+  .Checkbox-section-flex {
+   margin-left: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+  
+  .csf-2 {
+    width: 70%;
+    order: 0;
+    justify-self: center;
+    align-self: end;
+  }
+  
+  .Pitching-grid {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .Pgrid-2 input {
+    margin-bottom: 2.5em;
+  }
+  
+}
+/* 
+
+
+
+
+
+
+/* footer section */
+
+footer {
+   margin: 2em 1em;
+}
+
+footer h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}
+
+.footer-logo-links {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.footer-logo-links a{
+  font-size: 20px;
+  color: rgba(120,120,120,1);
+  margin-right: calc(2vw + 5px);
+  text-decoration: none;
+}
+
+.footer-logo-links a:hover, 
+.footer-logo-links a:focus{
+  color:  rgba(0,100,255,.7);
+  border-radius: 5px;
+}
+
+select {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.copy{
+  color: rgba(120,120,120,.7);
+  line-height: 2;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: oblique;
+  margin-bottom: 25px;
+}
+
+.Last-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3em;
+  width: calc(10vw + 250px);
+  row-gap: calc(2vh + 20px);
+}
+
+.Last-grid * a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.Last-grid * a:hover,
+.Last-grid * a:focus {
+  text-decoration: underline blue;
+}
+
+.stand-alone {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5em;
+}
+
+/* resp footer */
+@media (min-width: 768px) {
+  footer {
+    margin-left: 10em;
+  }
+  
+  .Last-grid {
+    width: 70%;
+  }
+  
 }
